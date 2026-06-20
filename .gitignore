@@ -1,0 +1,26 @@
+# 《纸上宇宙》.gitignore
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Node (if any tooling)
+node_modules/
+
+# Temp
+*.tmp
+*.bak
+*.log
+
+# Large files (track separately)
+*.pdf
+*.docx
+*.xlsx
