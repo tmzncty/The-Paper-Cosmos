@@ -534,5 +534,76 @@ ON CONFLICT (source_table, source_id) DO NOTHING;
 -- SELECT * FROM kaoyan.v_chapter_coverage;
 
 -- ============================================================
+-- 10. 弧线映射表（Phase 1 新增 2026-06-21）
+-- ============================================================
+
+-- 弧线定义表
+CREATE TABLE IF NOT EXISTS kaoyan.story_arcs (
+    arc_number      SMALLINT PRIMARY KEY,
+    arc_name        VARCHAR(50) NOT NULL,
+    arc_subtitle    VARCHAR(200),
+    chapter_start   INTEGER NOT NULL,
+    chapter_end     INTEGER NOT NULL,
+    chapter_count   INTEGER GENERATED ALWAYS AS (chapter_end - chapter_start + 1) STORED,
+    knowledge_quota INTEGER NOT NULL,
+    review_quota    INTEGER DEFAULT 0,
+    core_domain     TEXT[],
+    core_conflict   VARCHAR(200),
+    difficulty_profile JSONB DEFAULT '{"D1":30,"D2":35,"D3":25,"D4":8,"D5":2}',
+    status          VARCHAR(20) DEFAULT 'planned',
+    created_at      TIMESTAMP DEFAULT NOW()
+);
+
+INSERT INTO kaoyan.story_arcs (arc_number, arc_name, arc_subtitle, chapter_start, chapter_end, knowledge_quota, review_quota, core_domain, core_conflict) VALUES
+    (1, '入渊', '这个世界是真的吗？', 1, 30, 300, 0, ARRAY['THE-01','ANC-01','THE-03'], '这个世界是真的吗？'),
+    (2, '古卷残章', '原典可以被信任吗？', 31, 65, 500, 30, ARRAY['ANC-02','ANC-03','ANC-04','BIB-01','BIB-02'], '原典可以被信任吗？'),
+    (3, '双城记', '东方和西方，谁的理解更接近真理？', 66, 100, 650, 50, ARRAY['ANC-05','ANC-06','FOR-01','FOR-02','FOR-03'], '东西方谁更接近真理？'),
+    (4, '百年孤独', '文学必须为时代服务吗？', 101, 140, 780, 60, ARRAY['MOD-01','MOD-02','FOR-04','FOR-05'], '文学必须为时代服务吗？'),
+    (5, '理论之战', '谁有权定义正确的阐释？', 141, 180, 600, 80, ARRAY['THE-02','THE-03','BIB-03','BIB-04','FOR-05','FOR-06'], '谁有权定义正确的阐释？'),
+    (6, '文本叛乱', '如果文本自己反对被阐释呢？', 181, 220, 500, 100, ARRAY['FOR-06','FOR-07'], '文本反对被阐释？'),
+    (7, '天问', '人类为什么需要文学？', 221, 260, 800, 120, ARRAY['FOR-07'], '人类为什么需要文学？'),
+    (8, '未完之章', '故事结束后，世界还存在吗？', 261, 280, 396, 60, ARRAY['FOR-07','LEC'], '故事结束后世界还存在？')
+ON CONFLICT (arc_number) DO UPDATE SET
+    knowledge_quota = EXCLUDED.knowledge_quota,
+    core_domain = EXCLUDED.core_domain;
+
+-- 知识点-弧线分配表
+CREATE TABLE IF NOT EXISTS kaoyan.knowledge_arc_mapping (
+    id              SERIAL PRIMARY KEY,
+    knowledge_id    INTEGER REFERENCES kaoyan.knowledge_points(id) ON DELETE CASCADE,
+    arc_number      SMALLINT NOT NULL REFERENCES kaoyan.story_arcs(arc_number),
+    chapter_start   INTEGER,
+    chapter_end     INTEGER,
+    role            VARCHAR(20) NOT NULL CHECK (role IN ('primary', 'review', 'cross_ref')),
+    integration_method VARCHAR(30),
+    embedding_notes TEXT,
+    created_at      TIMESTAMP DEFAULT NOW(),
+    UNIQUE (knowledge_id, arc_number)
+);
+
+CREATE INDEX IF NOT EXISTS idx_kam_knowledge ON kaoyan.knowledge_arc_mapping(knowledge_id);
+CREATE INDEX IF NOT EXISTS idx_kam_arc ON kaoyan.knowledge_arc_mapping(arc_number);
+CREATE INDEX IF NOT EXISTS idx_kam_role ON kaoyan.knowledge_arc_mapping(role);
+
+-- 弧线进度视图
+CREATE OR REPLACE VIEW kaoyan.v_arc_progress AS
+SELECT
+    sa.arc_number,
+    sa.arc_name,
+    sa.chapter_start,
+    sa.chapter_end,
+    sa.knowledge_quota,
+    COUNT(DISTINCT kam.knowledge_id) FILTER (WHERE kam.role = 'primary') AS mapped_primary,
+    COUNT(DISTINCT kam.knowledge_id) FILTER (WHERE kam.role = 'review') AS mapped_review,
+    ROUND(
+        COUNT(DISTINCT kam.knowledge_id) FILTER (WHERE kam.role = 'primary')::NUMERIC 
+        / NULLIF(sa.knowledge_quota, 0) * 100, 1
+    ) AS progress_pct
+FROM kaoyan.story_arcs sa
+LEFT JOIN kaoyan.knowledge_arc_mapping kam ON sa.arc_number = kam.arc_number
+GROUP BY sa.arc_number, sa.arc_name, sa.chapter_start, sa.chapter_end, sa.knowledge_quota
+ORDER BY sa.arc_number;
+
+-- ============================================================
 -- 完成
 -- ============================================================
