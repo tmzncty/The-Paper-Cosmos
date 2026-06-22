@@ -1,0 +1,502 @@
+[
+  {
+    "file": "ch34_辞藻之战.md",
+    "chNum": 34,
+    "before": 18,
+    "after": 3,
+    "densityBefore": 3.73,
+    "densityAfter": 0.62,
+    "replaced": 15,
+    "charCount": 4825
+  },
+  {
+    "file": "ch61_词宋水城.md",
+    "chNum": 61,
+    "before": 25,
+    "after": 7,
+    "densityBefore": 2.61,
+    "densityAfter": 0.73,
+    "replaced": 18,
+    "charCount": 9579
+  },
+  {
+    "file": "ch66_水城.md",
+    "chNum": 66,
+    "before": 25,
+    "after": 7,
+    "densityBefore": 2.59,
+    "densityAfter": 0.72,
+    "replaced": 18,
+    "charCount": 9662
+  },
+  {
+    "file": "ch62_双城的入口.md",
+    "chNum": 62,
+    "before": 22,
+    "after": 7,
+    "densityBefore": 2.51,
+    "densityAfter": 0.8,
+    "replaced": 15,
+    "charCount": 8770
+  },
+  {
+    "file": "ch70_婉约的深处.md",
+    "chNum": 70,
+    "before": 19,
+    "after": 6,
+    "densityBefore": 2.33,
+    "densityAfter": 0.74,
+    "replaced": 13,
+    "charCount": 8161
+  },
+  {
+    "file": "ch40_文觉.md",
+    "chNum": 40,
+    "before": 25,
+    "after": 8,
+    "densityBefore": 2.32,
+    "densityAfter": 0.74,
+    "replaced": 17,
+    "charCount": 10764
+  },
+  {
+    "file": "ch68_词境之水.md",
+    "chNum": 68,
+    "before": 19,
+    "after": 6,
+    "densityBefore": 2.27,
+    "densityAfter": 0.72,
+    "replaced": 13,
+    "charCount": 8361
+  },
+  {
+    "file": "ch74_净化.md",
+    "chNum": 74,
+    "before": 14,
+    "after": 5,
+    "densityBefore": 2.13,
+    "densityAfter": 0.76,
+    "replaced": 9,
+    "charCount": 6562
+  },
+  {
+    "file": "ch67_婉约与豪放.md",
+    "chNum": 67,
+    "before": 17,
+    "after": 6,
+    "densityBefore": 2.07,
+    "densityAfter": 0.73,
+    "replaced": 11,
+    "charCount": 8226
+  },
+  {
+    "file": "ch77_欧陆深处.md",
+    "chNum": 77,
+    "before": 21,
+    "after": 8,
+    "densityBefore": 1.97,
+    "densityAfter": 0.75,
+    "replaced": 13,
+    "charCount": 10675
+  },
+  {
+    "file": "ch52_诗酒.md",
+    "chNum": 52,
+    "before": 18,
+    "after": 7,
+    "densityBefore": 1.94,
+    "densityAfter": 0.76,
+    "replaced": 11,
+    "charCount": 9261
+  },
+  {
+    "file": "ch55_疑卷阁的影子.md",
+    "chNum": 55,
+    "before": 18,
+    "after": 7,
+    "densityBefore": 1.9,
+    "densityAfter": 0.74,
+    "replaced": 11,
+    "charCount": 9459
+  },
+  {
+    "file": "ch38_慷慨悲凉.md",
+    "chNum": 38,
+    "before": 8,
+    "after": 3,
+    "densityBefore": 1.84,
+    "densityAfter": 0.69,
+    "replaced": 5,
+    "charCount": 4337
+  },
+  {
+    "file": "ch31_辞赋峰的雾.md",
+    "chNum": 31,
+    "before": 10,
+    "after": 4,
+    "densityBefore": 1.78,
+    "densityAfter": 0.71,
+    "replaced": 6,
+    "charCount": 5618
+  },
+  {
+    "file": "ch79_双城的交汇.md",
+    "chNum": 79,
+    "before": 12,
+    "after": 5,
+    "densityBefore": 1.7,
+    "densityAfter": 0.71,
+    "replaced": 7,
+    "charCount": 7076
+  },
+  {
+    "file": "ch42_版本河.md",
+    "chNum": 42,
+    "before": 12,
+    "after": 5,
+    "densityBefore": 1.63,
+    "densityAfter": 0.68,
+    "replaced": 7,
+    "charCount": 7368
+  },
+  {
+    "file": "ch14_纸鸢.md",
+    "chNum": 14,
+    "before": 11,
+    "after": 5,
+    "densityBefore": 1.58,
+    "densityAfter": 0.72,
+    "replaced": 6,
+    "charCount": 6942
+  },
+  {
+    "file": "ch72_互文之桥.md",
+    "chNum": 72,
+    "before": 9,
+    "after": 4,
+    "densityBefore": 1.54,
+    "densityAfter": 0.68,
+    "replaced": 5,
+    "charCount": 5852
+  },
+  {
+    "file": "ch88_鲁迅的三个影子.md",
+    "chNum": 88,
+    "before": 14,
+    "after": 7,
+    "densityBefore": 1.52,
+    "densityAfter": 0.76,
+    "replaced": 7,
+    "charCount": 9216
+  },
+  {
+    "file": "ch78_建造者之声.md",
+    "chNum": 78,
+    "before": 11,
+    "after": 5,
+    "densityBefore": 1.49,
+    "densityAfter": 0.68,
+    "replaced": 6,
+    "charCount": 7380
+  },
+  {
+    "file": "ch12_冰简.md",
+    "chNum": 12,
+    "before": 11,
+    "after": 5,
+    "densityBefore": 1.47,
+    "densityAfter": 0.67,
+    "replaced": 6,
+    "charCount": 7458
+  },
+  {
+    "file": "ch58_古文卫士的立场.md",
+    "chNum": 58,
+    "before": 10,
+    "after": 5,
+    "densityBefore": 1.4,
+    "densityAfter": 0.7,
+    "replaced": 5,
+    "charCount": 7152
+  },
+  {
+    "file": "ch75_哲人.md",
+    "chNum": 75,
+    "before": 10,
+    "after": 5,
+    "densityBefore": 1.4,
+    "densityAfter": 0.7,
+    "replaced": 5,
+    "charCount": 7137
+  },
+  {
+    "file": "ch08_赋比兴.md",
+    "chNum": 8,
+    "before": 10,
+    "after": 5,
+    "densityBefore": 1.39,
+    "densityAfter": 0.69,
+    "replaced": 5,
+    "charCount": 7219
+  },
+  {
+    "file": "ch91_左翼的旗帜.md",
+    "chNum": 91,
+    "before": 13,
+    "after": 7,
+    "densityBefore": 1.36,
+    "densityAfter": 0.73,
+    "replaced": 6,
+    "charCount": 9563
+  },
+  {
+    "file": "ch45_驿路.md",
+    "chNum": 45,
+    "before": 9,
+    "after": 5,
+    "densityBefore": 1.33,
+    "densityAfter": 0.74,
+    "replaced": 4,
+    "charCount": 6791
+  },
+  {
+    "file": "ch57_诗酒再会.md",
+    "chNum": 57,
+    "before": 10,
+    "after": 6,
+    "densityBefore": 1.29,
+    "densityAfter": 0.78,
+    "replaced": 4,
+    "charCount": 7740
+  },
+  {
+    "file": "ch16_校书峰之夜.md",
+    "chNum": 16,
+    "before": 13,
+    "after": 8,
+    "densityBefore": 1.24,
+    "densityAfter": 0.76,
+    "replaced": 5,
+    "charCount": 10526
+  },
+  {
+    "file": "ch37_竹林客.md",
+    "chNum": 37,
+    "before": 5,
+    "after": 3,
+    "densityBefore": 1.23,
+    "densityAfter": 0.74,
+    "replaced": 2,
+    "charCount": 4058
+  },
+  {
+    "file": "ch87_白话.md",
+    "chNum": 87,
+    "before": 10,
+    "after": 6,
+    "densityBefore": 1.23,
+    "densityAfter": 0.74,
+    "replaced": 4,
+    "charCount": 8101
+  },
+  {
+    "file": "ch47_缄默者的论证.md",
+    "chNum": 47,
+    "before": 8,
+    "after": 5,
+    "densityBefore": 1.18,
+    "densityAfter": 0.74,
+    "replaced": 3,
+    "charCount": 6790
+  },
+  {
+    "file": "ch05_误读是什么.md",
+    "chNum": 5,
+    "before": 7,
+    "after": 4,
+    "densityBefore": 1.17,
+    "densityAfter": 0.67,
+    "replaced": 3,
+    "charCount": 5996
+  },
+  {
+    "file": "ch11_宗庙.md",
+    "chNum": 11,
+    "before": 9,
+    "after": 6,
+    "densityBefore": 1.16,
+    "densityAfter": 0.77,
+    "replaced": 3,
+    "charCount": 7769
+  },
+  {
+    "file": "ch32_目录树.md",
+    "chNum": 32,
+    "before": 6,
+    "after": 4,
+    "densityBefore": 1.15,
+    "densityAfter": 0.77,
+    "replaced": 2,
+    "charCount": 5215
+  },
+  {
+    "file": "ch13_六义.md",
+    "chNum": 13,
+    "before": 7,
+    "after": 4,
+    "densityBefore": 1.13,
+    "densityAfter": 0.65,
+    "replaced": 3,
+    "charCount": 6185
+  },
+  {
+    "file": "ch29_版本之夜.md",
+    "chNum": 29,
+    "before": 7,
+    "after": 4,
+    "densityBefore": 1.13,
+    "densityAfter": 0.65,
+    "replaced": 3,
+    "charCount": 6188
+  },
+  {
+    "file": "ch36_目录的权力.md",
+    "chNum": 36,
+    "before": 5,
+    "after": 3,
+    "densityBefore": 1.12,
+    "densityAfter": 0.67,
+    "replaced": 2,
+    "charCount": 4468
+  },
+  {
+    "file": "ch80_第三弧的收束.md",
+    "chNum": 80,
+    "before": 10,
+    "after": 7,
+    "densityBefore": 1.12,
+    "densityAfter": 0.78,
+    "replaced": 3,
+    "charCount": 8938
+  },
+  {
+    "file": "ch85_百年新声界的第一封信.md",
+    "chNum": 85,
+    "before": 8,
+    "after": 5,
+    "densityBefore": 1.11,
+    "densityAfter": 0.69,
+    "replaced": 3,
+    "charCount": 7239
+  },
+  {
+    "file": "ch64_欧陆剧场.md",
+    "chNum": 64,
+    "before": 7,
+    "after": 5,
+    "densityBefore": 1.1,
+    "densityAfter": 0.79,
+    "replaced": 2,
+    "charCount": 6366
+  },
+  {
+    "file": "ch22_密室.md",
+    "chNum": 22,
+    "before": 6,
+    "after": 4,
+    "densityBefore": 1.07,
+    "densityAfter": 0.71,
+    "replaced": 2,
+    "charCount": 5596
+  },
+  {
+    "file": "ch46_疑卷阁的门.md",
+    "chNum": 46,
+    "before": 10,
+    "after": 7,
+    "densityBefore": 1.07,
+    "densityAfter": 0.75,
+    "replaced": 3,
+    "charCount": 9378
+  },
+  {
+    "file": "ch59_诗意之战.md",
+    "chNum": 59,
+    "before": 8,
+    "after": 5,
+    "densityBefore": 1.07,
+    "densityAfter": 0.67,
+    "replaced": 3,
+    "charCount": 7491
+  },
+  {
+    "file": "ch33_太史令.md",
+    "chNum": 33,
+    "before": 6,
+    "after": 4,
+    "densityBefore": 1.06,
+    "densityAfter": 0.71,
+    "replaced": 2,
+    "charCount": 5664
+  },
+  {
+    "file": "ch83_天问之渊.md",
+    "chNum": 83,
+    "before": 10,
+    "after": 7,
+    "densityBefore": 1.06,
+    "densityAfter": 0.74,
+    "replaced": 3,
+    "charCount": 9395
+  },
+  {
+    "file": "ch69_辛弃疾的剑.md",
+    "chNum": 69,
+    "before": 8,
+    "after": 6,
+    "densityBefore": 1.05,
+    "densityAfter": 0.79,
+    "replaced": 2,
+    "charCount": 7605
+  },
+  {
+    "file": "ch71_元曲的前奏.md",
+    "chNum": 71,
+    "before": 8,
+    "after": 6,
+    "densityBefore": 1.03,
+    "densityAfter": 0.77,
+    "replaced": 2,
+    "charCount": 7802
+  },
+  {
+    "file": "ch93_现代派的房间.md",
+    "chNum": 93,
+    "before": 10,
+    "after": 7,
+    "densityBefore": 1.03,
+    "densityAfter": 0.72,
+    "replaced": 3,
+    "charCount": 9752
+  },
+  {
+    "file": "ch15_版本之雾的深处.md",
+    "chNum": 15,
+    "before": 8,
+    "after": 6,
+    "densityBefore": 1.02,
+    "densityAfter": 0.76,
+    "replaced": 2,
+    "charCount": 7875
+  },
+  {
+    "file": "ch76_天问的方向.md",
+    "chNum": 76,
+    "before": 7,
+    "after": 5,
+    "densityBefore": 1.01,
+    "densityAfter": 0.72,
+    "replaced": 2,
+    "charCount": 6952
+  }
+]
