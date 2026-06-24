@@ -59,8 +59,11 @@
 ```
 纸上宇宙/
 ├── README.md              # 本文件
-├── drafts/                # 章节正文（ch01-ch120）
-│   └── _archive/          # 已归档的构建产物和临时文件
+├── drafts/                # 章节正文
+│   ├── ch01-ch120         # 主线 120 章
+│   ├── spinoffs/          # 番外章节（1-7部，43章）
+│   │   └── cards/         # 考研冲刺卡片（106张）
+│   └── _archive/          # 已归档的构建产物（gitignored）
 ├── shared/                # 共享文档
 │   ├── 01_worldview_framework.md      # 世界观架构
 │   ├── 02_knowledge_taxonomy.md       # 知识分类法
