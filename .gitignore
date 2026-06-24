@@ -24,3 +24,8 @@ node_modules/
 *.pdf
 *.docx
 *.xlsx
+
+# Build artifacts & archived temp files
+_archive/
+drafts/_archive/
+key.pem
