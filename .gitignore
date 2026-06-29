@@ -24,6 +24,11 @@ node_modules/
 *.pdf
 *.docx
 *.xlsx
+*.doc
+*.pptx
+
+# 研考素材 — 本地分析用，不上传
+研考素材/
 
 # Build artifacts & archived temp files
 _archive/
